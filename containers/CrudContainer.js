@@ -159,7 +159,7 @@ const CrudContainer = () => {
         onOk={form.id ? handleUpdate : handlePost}
         onCancel={() => setOpenModal(false)}
       >
-        <p>NOMBRE:</p>
+        <p>NOMBRE PRO:</p>
         <Input
           onChange={handleChange}
           name="name"
