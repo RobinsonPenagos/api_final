@@ -141,11 +141,11 @@ const CrudContainer = () => {
   };
 
   return (
-    <>
-      <Row>
+    <  >
+      <Row >
         <Col span={12} offset={6}>
-          <h1>Mi primera api</h1>
-          <Button type="primary" onClick={showModal}>
+          <h1 className="titulo"><center>Robinson Penagos</center></h1>
+          <  Button type="primary" onClick={showModal}>
             Crear
           </Button>
           <Table rowKey={"id"} dataSource={data} columns={columns} />
