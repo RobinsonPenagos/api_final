@@ -142,6 +142,7 @@ const CrudContainer = () => {
 
   return (
     <  >
+    <div className="body">
       <Row >
         <Col span={12} offset={6}>
           <h1 className="titulo"><center>Robinson Penagos</center></h1>
@@ -158,21 +159,21 @@ const CrudContainer = () => {
         onOk={form.id ? handleUpdate : handlePost}
         onCancel={() => setOpenModal(false)}
       >
-        <p>Nombre:</p>
+        <p>NOMBRE:</p>
         <Input
           onChange={handleChange}
           name="name"
           placeholder="Nombre del producto"
           value={form && form.name}
         />
-        <p>Precio:</p>
+        <p>PRECIO:</p>
         <Input
           onChange={handleChange}
           name="price"
           placeholder="Precio del producto"
           value={form && form.price}
         />
-        <p>Descripcion:</p>
+        <p>DESCRIPCION:</p>
         <TextArea
           onChange={handleChange}
           name="description"
@@ -182,6 +183,7 @@ const CrudContainer = () => {
           maxLength={25}
         />
       </Modal>
+      </div>
     </>
   );
 };
